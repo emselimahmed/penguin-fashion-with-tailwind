@@ -7,15 +7,20 @@
     <title>Penguin Fashion</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Google Fonts Bebas -->
+    <!-- Google Font Bebas -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-    <!-- Google Fonts Roboto -->
+    <!-- Google Font Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Google Font Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 
     <style>
         .font-bebas {
@@ -25,15 +30,31 @@
         .font-roboto {
             font-family: 'Roboto', sans-serif;
         }
+
+        .font-montserrat {
+            font-family: 'Montserrat', sans-serif;
+        }
     </style>
 </head>
 
 <body>
 
-    <header class="bg-amber-100 py-20 px-4 md:px-24">
+    <header class="bg-amber-100 py-10 px-4 md:px-24">
         <!-- nav section -->
-        <nav>
-
+        <nav class="mb-4">
+            <div class="flex justify-between items-center">
+                <div>
+                    <img class="w-80 cursor-pointer" src="assets/icons/logo.png" alt="logo">
+                </div>
+                <div>
+                    <ul class="flex gap-14 font-roboto font-bold text-[#3C3C3C;] cursor-pointer">
+                        <li>Home</li>
+                        <li>Products</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </div>
         </nav>
 
         <!-- Banner section -->
@@ -43,7 +64,7 @@
                     Winter</h1>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 <button
-                    class="py-4 px-9 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-xl uppercase text-white font-medium">
+                    class="py-4 px-9 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-xl uppercase text-white font-medium cursor-pointer">
 
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="w-6 h-6 inline">
@@ -62,11 +83,11 @@
     <main class="max-w-7xl mx-auto">
 
         <!-- Women Jackets Section -->
-        <section class="py-10">
+        <section class="py-10 max-w-6xl mx-auto">
             <h3 class="text-5xl font-bebas">Women Jackets</h3>
 
             <!-- Jackets Container -->
-            <div class="font-roboto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-44 ">
+            <div class="font-roboto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-44 max-w-6xl mx-auto"> 
 
                 <!-- Jacket-1 -->
                 <div class="space-y-3 drop-shadow-lg w-72">
@@ -79,7 +100,7 @@
                         <h3 class="text-4xl font-black text-orange-400">$234</h3>
                         <div class="flex justify-center gap-20">
                             <button
-                                class="py-3 px-4 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-xl uppercase text-white font-medium">
+                                class="py-3 px-4 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-xl uppercase text-white font-medium cursor-pointer">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline">
                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -99,7 +120,7 @@
                     <div class="flex justify-evenly items-center">
                         <h3 class="text-4xl font-black text-orange-400">$234</h3>
                         <button
-                            class="py-3 px-4 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-xl uppercase text-white font-medium">
+                            class="py-3 px-4 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-xl uppercase text-white font-medium cursor-pointer">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-6 h-6 inline">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -118,7 +139,7 @@
                     <div class="flex justify-evenly items-center">
                         <h3 class="text-4xl font-black text-orange-400">$234</h3>
                         <button
-                            class="py-3 px-4 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-xl uppercase text-white font-medium">
+                            class="py-3 px-4 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-xl uppercase text-white font-medium cursor-pointer">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-6 h-6 inline">
                                 <path stroke-linecap="round" stroke-linejoin="round"
